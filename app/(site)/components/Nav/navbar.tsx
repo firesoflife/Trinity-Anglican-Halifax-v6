@@ -1,5 +1,7 @@
 'use client';
 
+// THIS NAVBAR IS NOT IN USE BUT KEPT AS BACKUP
+
 // TODO - Add animated / pulsing chevron (maybe in circle) to menu items in dropdowns
 
 import Link from 'next/link';
