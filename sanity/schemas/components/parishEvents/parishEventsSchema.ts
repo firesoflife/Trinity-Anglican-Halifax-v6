@@ -131,17 +131,6 @@ export const parishEvents = defineType({
 				hotspot: true,
 			},
 		}),
-		defineField({
-			name: 'sortOrder',
-			title: 'Sort Order',
-			description:
-				'Adjust the number to change the order in which events appear. Lower numbers appear first.',
-			type: 'number',
-			validation: (Rule) =>
-				Rule.required()
-					.min(0)
-					.error('Sort order must be a number greater than or equal to 0.'),
-		}),
 	],
 
 	preview: {

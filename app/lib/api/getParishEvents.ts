@@ -3,7 +3,7 @@ import { client } from '@/sanity/lib/client';
 
 export async function getParishEvents(): Promise<ParishEvents[]> {
 	return client.fetch(
-		groq`*[_type == "parishEvents"] | order(sortOrder asc){ 
+		groq`*[_type == "parishEvents"]{ 
         ...,
         eventTitle,
         slug,
@@ -39,8 +39,7 @@ export async function getParishEvents(): Promise<ParishEvents[]> {
             },
             crop,
             hotspot
-        },
-        sortOrder
+        }
     }`
 	);
 }
